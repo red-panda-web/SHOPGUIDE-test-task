@@ -61,7 +61,7 @@ body{
 	max-height: 810px;
 	overflow: hidden;
 	@media (max-width: 992px){
-		max-height: 630px;
+		max-height: 550px;
 	}
 }
 
@@ -69,7 +69,7 @@ body{
 	border-radius: 10px;
 	background-color: #29d3d1;
 	display: flex;
-	padding: 17px 40px;
+	padding: 15px 40px;
 	max-width: 277px;
 	max-height: 49px;
 	margin: 0 auto;
@@ -153,14 +153,14 @@ body{
 	display: flex;
 	flex: 1 1 50%;
 	flex-direction: column;
-	padding: 19.2% 25% 23% 10.8%;
+	padding: 19.2% 25% 23% 11%;
 
 	span{
 		color: #ffffff;
 		font-size: 17px;
 		line-height: 18.71px;
-		letter-spacing: 1.34px;
-		margin-top: 4.4%;
+		letter-spacing: .34px;
+		margin: 4.5% 0 0 -3%;
 		text-align: center;
 		&:before, &:after{
 			content: "";
@@ -169,10 +169,10 @@ body{
 			background-color: #ffffff;
 			opacity: 0.3;
 			width: 36%;
-			@media (max-width: 992px){
+			@media (max-width: 1184px){
 				width: 35%;
 			}
-			@media (max-width: 840px){
+			@media (max-width: 1080px){
 				width: 34%;
 			}
 			@media (max-width: 767px){
@@ -195,18 +195,20 @@ body{
 		}
 
 		@media (max-width: 767px){
-			margin-top: 7.5%;
+			margin-top: 7.3%;
 			font-size: 32px;
 			letter-spacing: normal;
-		}
+		}	
 	}
 
 	@media (max-width: 992px){
 		padding: 19% 16% 23% 10%;
 	}
-
 	@media (max-width: 767px){
 		padding: 25.5% 15% 19.2% 15%;
+	}
+	@media (max-width: 500px){
+			padding: 30% 1%;
 	}
 }
 
@@ -242,10 +244,12 @@ body{
 
 .download__buttons{
 	display: flex;
-	justify-content: space-between;
-	margin-top: 4%;
+	margin: 4% 0 0 -1%;
 	@media (max-width:767px){
-		margin-top: 4.5%;
+		margin-top: 4.8%;
+	}
+	@media (max-width: 500px){
+		margin-top: 10%;	
 	}
 }
 
@@ -254,6 +258,9 @@ body{
 	border: 2px solid #ffffff1a;
 	max-width: 192px;
 	max-height: 57px;
+	&:nth-child(1){
+		margin-right: 20px;
+	}
 	a{
 		width: 100%;
 		height: 100%;
@@ -279,3 +286,97 @@ body{
 		display: none;
 	}
 }
+
+/////// The second section //////////
+
+.features {
+}
+.container_alt {
+	max-width: 1360px; 
+}
+.features__body {
+	display: flex;
+	justify-content: space-between;
+	padding: 5.9% 0;
+	flex-wrap: wrap;
+	@media (max-width: 767px){
+		justify-content: space-evenly;
+		padding: 7.7% 0;
+	}
+}
+.features__item {
+	text-align: center;
+	flex: 0 0 18%;
+	&:nth-child(2){
+		margin-left: -17px;
+	}
+	h3{
+		font-family: "Futura Demi C";
+		font-size: 22px;
+		line-height: 100%;
+		text-transform: uppercase;
+		letter-spacing: 0.11px;
+		margin: 8% 0 4% 0;
+		@media (max-width: 767px){
+			margin: 3% 2% 3% 0;
+		}
+		@media (max-width: 500px){
+			font-size: 20px;
+		}
+	}
+
+	p{
+		font-size: 18px;
+		line-height: 20px;
+		letter-spacing: 0.09px;
+		@media (max-width: 767px){
+			font-size: 22px;
+			line-height: 24px;
+		}
+		@media (max-width: 500px){
+			font-size: 18px;
+		}
+	}
+
+	@media (max-width: 767px){
+		flex: 0 0 35%;
+		margin-bottom: 2%;
+
+		&:nth-child(1){
+			order: 1;
+			margin-left: -1%;
+		}
+		&:nth-child(2){
+			order: 4;
+			margin-left: 1%;
+		}
+		&:nth-child(3){
+			order: 2;
+		}
+		&:nth-child(4){
+			order: 3;
+			margin-left: -1%;
+		}
+	}
+
+	@media (max-width: 575px){
+		flex: 0 0 100%;
+		margin-bottom: 5%;
+	}
+}
+
+.features__item-img {
+	max-width: 100px;
+	max-height: 100px;
+	img{
+		height: 100%;
+		width: 100%;
+	}
+
+	@media (max-width: 767px){
+		max-width: 130px;
+		max-height: 125px
+	}
+}
+
+//////// The third section ///////////
