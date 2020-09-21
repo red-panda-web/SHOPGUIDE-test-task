@@ -992,6 +992,7 @@ body {
 
 @media (max-width: 500px) {
   .offer__body a {
-    font-size: 26px;
+    font-size: 16px;
+    padding: 10px 45px;
   }
 }
