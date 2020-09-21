@@ -205,10 +205,10 @@ body{
 		padding: 19% 16% 23% 10%;
 	}
 	@media (max-width: 767px){
-		padding: 25.5% 15% 19.2% 15%;
+		padding: 25.8% 15% 19.2% 15%;
 	}
 	@media (max-width: 500px){
-			padding: 30% 1%;
+		padding: 30% 1%;
 	}
 }
 
@@ -302,7 +302,7 @@ body{
 		padding: 7.7% 0 3% 0;
 	}
 	@media (max-width: 500px){
-		padding: 7.7% 0 23% 0;
+		padding: 7.7% 0 10% 0;
 	}
 }
 .features__item {
@@ -560,5 +560,133 @@ body{
 
 	@media(max-width: 1080px){
 			display: none;
+	}
+}
+
+//////// The fifth section //////////
+
+.partners {
+	@media (max-width: 750px){
+		margin-top: -1.5%;
+	}
+}
+
+.partners__body {
+	padding: 3% 0 0 0;
+	h3{
+		color: #eb645a;
+		font-family: "Futura Demi C";
+		font-size: 36px;
+		line-height: 62.99px;
+		text-transform: uppercase;
+		letter-spacing: 1.7px;
+		text-align: center;
+		margin-bottom: 0.8%;
+		@media (max-width: 997px){
+			margin-bottom: 2%;
+		}
+		@media (max-width: 500px){
+			font-size: 20px;
+		}
+	}
+
+	@media (max-width: 997px){
+		padding-top: 7%;
+	}
+	@media (max-width: 750px){
+		padding-top: 0;
+	}
+}
+.slider-additional-wrap{
+background-color: #eb645a;
+}
+
+.container-rel{
+	position: relative;
+}
+
+.swiper-container {
+	width: 90%;
+	padding: 3.7%;
+	@media (max-width: 750px){
+		padding: 8.5%;
+	}
+}
+
+.swiper-slide {
+	width: 100%;
+	height: auto;
+	//border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.3;
+	&:hover{
+		opacity: 1;
+	}
+}
+.swiper-button-prev,.swiper-button-next{
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	background-size: 19px;
+}
+.swiper-button-prev {
+	background: url("../../img/icons/arrow_left.svg") center no-repeat, #f48078;
+}
+.swiper-button-next {
+	background: url("../../img/icons/arrow_right.svg") center no-repeat, #f48078;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+	display: none;
+}
+
+///////////The sixth section////////////
+
+.offer {
+}
+.offer__body {
+	padding: 3.5% 0 0 0;
+	text-align: center;
+	@media (max-width: 767px){
+		padding: 8% 2.5% 0 2.5%;
+	}
+
+	span{
+		opacity: 0.9;
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: 1.2px;
+		@media (max-width: 767px){
+			font-size: 34px;
+			line-height: 40px;
+		}
+		@media (max-width: 500px){
+			font-size: 24px;
+		}
+	}
+
+	a{
+		display: inline-block;
+		color: #ffffff;
+		font-family: "Futura Demi C";
+		font-size: 20px;
+		line-height: 31.26px;
+		text-transform: uppercase;
+		letter-spacing: 0.96px;
+		border-radius: 10px;
+		background-color: #29d3d1;
+		padding: 15px 85px;
+		margin-top: 3%;
+		@media (max-width: 767px){
+			margin-top: 7.5%;
+			padding: 20px 80px;
+			font-size: 30px;
+			letter-spacing: 1.44px;
+		}
+		@media (max-width: 500px){
+			font-size: 26px;
+		}
 	}
 }
