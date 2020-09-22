@@ -26,7 +26,7 @@
 	font-family: 'SFUIDisplay-medium';
 	src: url('../fonts/SFUIDisplaymedium.eot');
 	src: local('☺'), url('../fonts/SFUIDisplaymedium.woff') format('woff'), url('../fonts/SFUIDisplaymedium.ttf') format('truetype'), url('../fonts/SFUIDisplaymedium.svg') format('svg');
-	font-weight: medium;
+	font-weight: 500;
 	font-style: normal;
 }
 
@@ -205,7 +205,7 @@ body{
 		padding: 19% 16% 23% 10%;
 	}
 	@media (max-width: 767px){
-		padding: 25.8% 15% 19.2% 15%;
+		padding: 25.8% 15% 18.9% 15%;
 	}
 	@media (max-width: 500px){
 		padding: 30% 1%;
@@ -219,24 +219,43 @@ body{
 	&:before{
 		content: "только лучшие акции";
 		font-family: 'SFUIDisplay-medium';
-		display: inline-block;
+		display: block;
 		padding: 8px 7px;
 		position: absolute;
 		top: -87%;
-		left: 60%;
-		background: url("../img/icons/only_popup.svg") 0 0 no-repeat;
+		background: url("../img/icons/only_popup.svg") 100% 0/contain no-repeat;
 		width: 100%;
 		height: 36px;
 		color: #ffffff;
 		font-size: 12px;
 		font-weight: 500;
 		text-transform: uppercase;
+		text-align: right;
 		@media (max-width: 767px){
-			width: 202px;
 			height: 46px;
 			top: -110%;
 			font-size: 15px;
 			padding: 10px 8px;
+		}
+		@media (max-width: 1200px){
+			top: -92%;
+		}
+		@media (max-width: 997px){
+			top: -90%;
+		}
+		@media (max-width: 767px){
+			top: -111%;
+		}
+		@media (max-width: 500px){
+			top: -90%;
+			font-size: 13px;
+			padding: 8px 1px;
+			height: 36px;
+		}
+		@media (max-width: 400px){
+			top: -105%;
+			font-size: 12px;
+			padding: 8px 8px;
 		}
 	}
 
@@ -501,7 +520,7 @@ body{
 		padding: 5.4% 0 5.6% 1%
 	}
 	@media (max-width: 767px){
-		padding-left: 0;
+		padding: 5.4% 0 5% 0;
 	}
 }
 .our-promo__text {
@@ -514,7 +533,8 @@ body{
 		letter-spacing: 1.5px;
 		@media (max-width: 767px){
 			font-size: 36px;
-			margin-bottom: 20px;
+			margin-bottom: 26px;
+			padding-left: 3%;
 		}
 		@media (max-width: 500px){
 			font-size: 20px;
@@ -701,7 +721,7 @@ background-color: #eb645a;
 	background: url("../img/bg.jpg") 0 0/cover no-repeat;
 	padding: 40px 0 30px 0;
 	@media (max-width: 767px){
-		padding: 15% 0 4% 0;
+		padding: 15.5% 0 4% 0;
 	}
 
 }
@@ -748,7 +768,7 @@ background-color: #eb645a;
 	@media (max-width: 767px){
 		order: 2;
 		text-align: center;
-		margin-top: 9%;
+		margin-top: 8.8%;
 	}
 	@media (max-width: 500px){
 		margin-top: 19%;
