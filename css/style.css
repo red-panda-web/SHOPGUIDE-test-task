@@ -652,20 +652,8 @@ body {
   margin: 65px 0 80px 0;
 }
 
-.options__first-block a {
-  opacity: 0.3;
-  color: #ffffff;
-  font-family: "Futura Demi C";
-  font-size: 32px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  padding-bottom: 3.5%;
-  border-bottom: 4px solid transparent;
-}
-
-.options__first-block a:hover {
-  border-color: white;
-  opacity: 1;
+.options__first-block .options__tab {
+  padding-bottom: 5%;
 }
 
 .options__phone-block {
@@ -689,7 +677,7 @@ body {
   margin: 65px 0 80px 0;
 }
 
-.options__links ul {
+.options__tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -700,31 +688,34 @@ body {
       flex-wrap: wrap;
 }
 
-.options__links li {
-  height: 100%;
-  padding: 0 0 1.5% 0;
-  border-bottom: 4px solid transparent;
-}
-
-.options__links li:hover {
-  border-color: white;
-}
-
-.options__links li:hover a {
-  opacity: 1;
-}
-
-.options__links a {
+.options__tab {
   opacity: 0.3;
   color: #ffffff;
   font-family: "Futura Demi C";
   font-size: 32px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  border-bottom: 4px solid transparent;
+  padding: 0 0 1.5% 0;
+  cursor: pointer;
+}
+
+.options__tab:hover {
+  border-color: white;
+  opacity: 1;
+}
+
+.options__tab.active {
+  border-color: white;
+  opacity: 1;
+}
+
+.options__texts {
+  max-width: 666px;
 }
 
 .options__text {
-  max-width: 666px;
+  display: none;
 }
 
 .options__text p {
@@ -735,6 +726,10 @@ body {
 
 .options__text p:first-child {
   margin: 5.8% 0 2.5% 0;
+}
+
+.options__text.active {
+  display: block;
 }
 
 .our-promo {
