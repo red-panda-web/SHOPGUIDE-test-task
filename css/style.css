@@ -138,7 +138,7 @@ body {
   display: flex;
   padding: 15px 40px;
   max-width: 277px;
-  max-height: 49px;
+  height: 49px;
   margin: 0 auto;
   margin-top: -1.4%;
 }
@@ -154,6 +154,14 @@ body {
 
 .scroll-block div {
   margin: 0 40px;
+  -webkit-animation-name: arrow;
+          animation-name: arrow;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 .scroll-block div img {
@@ -169,6 +177,24 @@ body {
 @media (max-width: 767px) {
   .scroll-block {
     display: none;
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    margin: -7px 40px 0 40px;
+  }
+  100% {
+    margin: 7px 40px 0 40px;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    margin: -7px 40px 0 40px;
+  }
+  100% {
+    margin: 7px 40px 0 40px;
   }
 }
 
@@ -650,6 +676,7 @@ body {
   background-color: #29d3d1;
   padding: 4.2% 2% 3% 4.2%;
   margin: 65px 0 80px 0;
+  max-height: 431px;
 }
 
 .options__first-block .options__tab {
@@ -675,6 +702,8 @@ body {
           flex-grow: 1;
   padding: 4.2% 5% 2% 4%;
   margin: 65px 0 80px 0;
+  max-height: 431px;
+  overflow: hidden;
 }
 
 .options__tabs {
@@ -712,6 +741,9 @@ body {
 
 .options__texts {
   max-width: 666px;
+  max-height: 60%;
+  overflow: auto;
+  margin-top: 4%;
 }
 
 .options__text {
@@ -725,7 +757,7 @@ body {
 }
 
 .options__text p:first-child {
-  margin: 5.8% 0 2.5% 0;
+  margin: 0% 0 2.5% 0;
 }
 
 .options__text.active {
