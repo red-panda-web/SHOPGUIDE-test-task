@@ -15,6 +15,11 @@ var mySwiper = new Swiper('.swiper-container', {
 
 //tabs
 let triggers = document.querySelectorAll(".js-trigger"); // считываем все табы
+let img_arr = ["img/phone2_list.jpg",	// массив изображений
+	"img/phone2_actions.jpg",
+	"img/phone2_subsribtions.jpg",
+	"img/phone2_map.jpg",
+	"img/phone2_favorites.jpg"];
 
 triggers.forEach((item) => {
 	item.addEventListener("click", function () {	//на каждый вешаем событие
@@ -29,5 +34,7 @@ triggers.forEach((item) => {
 
 		active_content.classList.remove("active");
 		content.classList.add("active");
+
+		document.querySelector(".options__phone-block img").setAttribute("src", img_arr[id - 1]); // меняем изображение на соответствующее активному табу
 	})
 })
