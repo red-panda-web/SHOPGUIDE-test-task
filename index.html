@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 	<link rel="icon" href="img/icons/favicon.ico" type="image/x-icon">
 	<title>SHOPGUIDE</title>
 </head>
@@ -83,9 +84,15 @@
 			<div class="options__first-block">
 				<div class="options__tab js-trigger" data-tab="1">избранное</div>
 			</div>
+
 			<div class="options__phone-block">
-				<img src="img/phone2_actions.jpg" alt="Actions">
+				<img class="js-img animate__animated" src="img/phone2_list.jpg" alt="List" data-tab="1">
+				<img class="js-img animate__animated active" src="img/phone2_actions.jpg" alt="Actions" data-tab="2">
+				<img class="js-img animate__animated" src="img/phone2_subsribtions.jpg" alt="Subscribtions" data-tab="3">
+				<img class="js-img animate__animated" src="img/phone2_map.jpg" alt="Map" data-tab="4">
+				<img class="js-img animate__animated" src="img/phone2_favorites.jpg" alt="Favorites" data-tab="5">
 			</div>
+
 			<div class="options__main-block">
 				<div class="options__tabs">
 					<div class="options__tab js-trigger active" data-tab="2">профиль акции</div>
@@ -94,31 +101,31 @@
 					<div class="options__tab js-trigger" data-tab="5">моя лента</div>
 				</div>
 				<div class="options__texts">
-					<div class="options__text js-content active" data-tab="1">
+					<div class="options__text js-content active animate__animated" data-tab="1">
 						<p>Вы всегда получите полную информацию об акции: подробное описание, бренд,
 							магазины и торговые центры где походит акция.</p>
 						<p>Также доступна возможность сразу перейти на сайт товара и купить в рамках
 							действующей акции.</p>
 					</div>
-					<div class="options__text js-content" data-tab="2">
+					<div class="options__text js-content animate__animated" data-tab="2">
 						<p>Вы всегда получите полную информацию об акции: подробное описание, бренд,
 							магазины и торговые центры где походит акция.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, inventore delectus, vitae
 							excepturi voluptatum minus libero architecto in officia est asperiores quo cupiditate molestias ab
 							aliquam qui itaque et dicta!</p>
 					</div>
-					<div class="options__text js-content" data-tab="3">
+					<div class="options__text js-content animate__animated" data-tab="3">
 						<p>Вы всегда получите полную информацию об акции: подробное описание, бренд,
 							магазины и торговые центры где походит акция.</p>
 					</div>
-					<div class="options__text js-content" data-tab="4">
+					<div class="options__text js-content animate__animated" data-tab="4">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, aspernatur! Maiores laborum atque,
 							nesciunt odio aliquid tempore quisquam, quam velit nemo dolor ad eaque dicta quia ex autem, veniam
 							nobis.</p>
 						<p>Также доступна возможность сразу перейти на сайт товара и купить в рамках
 							действующей акции.</p>
 					</div>
-					<div class="options__text js-content" data-tab="5">
+					<div class="options__text js-content animate__animated" data-tab="5">
 						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad reprehenderit odit in quam optio nobis
 							laboriosam eum quo fuga minus!</p>
 						<p>Lorem ipsum dolor sit amet.</p>
@@ -193,14 +200,14 @@
 					<a href="#">правила пользования</a>
 				</div>
 				<div class="footer__button">
-					<a href="#"><span>Связаться с нами</span></a>
+					<a href="#""><span>Связаться с нами</span></a>
 				</div>
 			</div>
 		</div>
 	</footer>
 
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script src="script/script.js"></script>
+	<script src=" https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+						<script src="script/script.js"></script>
 </body>
 
 </html>

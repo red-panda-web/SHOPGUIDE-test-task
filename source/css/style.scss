@@ -457,9 +457,14 @@ body{
 	min-width: 275px;
 	height: 575px;
 	padding: 67px 16px 78px 16px;
+	overflow: hidden;
 	img{
 		width: 100%;
 		height: 100%;
+		display: none;
+		&.active{
+			display: block;
+		}
 	}
 }
 
@@ -504,6 +509,7 @@ body{
 	max-height: 60%;
 	overflow: auto;
 	margin-top: 4%;
+	overflow-x: hidden;
 }
 
 .options__text{
