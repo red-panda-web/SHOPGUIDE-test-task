@@ -24,7 +24,7 @@
 					<div class="header__social_ok"><a href="#"><img src="img/icons/icon_ok.svg" alt="Odnoklassniki"></a>
 					</div>
 				</div>
-				<div class="header__button"><a href="#">Стать партнером</a></div>
+				<div class="header__button"><a href="#modal" class="openModal">Стать партнером</a></div>
 			</header>
 
 			<div class="first-section__body">
@@ -186,7 +186,7 @@
 			<div class="offer__body">
 				<span>Хотите стать партнером?</span><br>
 				<span>Напишите нам и про ваши акции узнают все.</span><br>
-				<a href="#">стать партнером</a>
+				<a hhref="#modal" class="openModal">стать партнером</a>
 			</div>
 		</div>
 	</section>
@@ -200,14 +200,24 @@
 					<a href="#">правила пользования</a>
 				</div>
 				<div class="footer__button">
-					<a href="#""><span>Связаться с нами</span></a>
+					<a href="#modal" class="openModal"><span>Связаться с нами</span></a>
 				</div>
 			</div>
 		</div>
 	</footer>
 
+	<div class=" modal__wrap" id="modal">
+		<div class="modal">
+			<button class="closeModal">X</button>
+			<form action="">
+				<p><label for="in_name">Имя:</label><input type="text" id="in_name"></p>
+				<p><label for="in_tel">Телефон:</label><input type="tel" id="in_tel"></p>
+				<p><input type="submit"></p>
+			</form>
+		</div>
+	</div>
 	<script src=" https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-						<script src="script/script.js"></script>
+	<script src="script/script.js"></script>
 </body>
 
 </html>

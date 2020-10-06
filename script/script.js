@@ -40,3 +40,16 @@ triggers.forEach((item) => {
 		img.classList.add("animate__fadeInRight");
 	})
 })
+
+//modals
+let modals_button = document.querySelectorAll(".openModal");
+
+modals_button.forEach((item) => {
+	item.addEventListener("click", function () {
+		document.querySelector(".modal__wrap").style.display = "flex";
+	})
+})
+
+document.querySelector(".closeModal").addEventListener("click", () => {
+	document.querySelector(".modal__wrap").style.display = "none";
+})

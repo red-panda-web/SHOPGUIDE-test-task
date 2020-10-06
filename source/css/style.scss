@@ -145,6 +145,7 @@ body{
 
 .header__button {
 	padding-top: 12px;
+	cursor: pointer;
 	a{
 		color: #ffffff;
 		font-family: "Futura Demi C";
@@ -729,6 +730,7 @@ background-color: #eb645a;
 		background-color: #29d3d1;
 		padding: 15px 85px;
 		margin-top: 3%;
+		cursor: pointer;
 		@media (max-width: 767px){
 			margin-top: 7.5%;
 			padding: 20px 80px;
@@ -806,6 +808,7 @@ background-color: #eb645a;
 }
 .footer__button {
 	padding-top: 19px;
+	cursor: pointer;
 	span{
 		background: url("../img/icons/contact.svg") 14px 50% no-repeat;
 		background-size: 18px;
@@ -833,5 +836,56 @@ background-color: #eb645a;
 
 	@media (max-width: 767px){
 		order: 1;
+	}
+}
+
+
+
+//////// modal /////////
+.modal__wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba($color: #000000, $alpha: 0.3);
+	z-index: 20;
+}
+.modal {
+	background-color: #fff;
+	padding: 30px;
+	font-size: 20px;
+	border-radius: 20px;
+	width: 450px;
+	position: relative;
+	button{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		color: black;
+		background-color: red;
+		border-color: black;
+		font-size: 20px;
+		padding: 5px 10px;
+	}
+	form{
+		p{
+			display: flex;
+			justify-content: space-between;
+			margin: 20px 0;
+			input{
+				border: 1px solid #666;
+				width: 60%;
+			}
+			&:first-child{
+					margin-top: 40px;
+				}
+			&:last-child{
+				justify-content: center;
+			}
+		}
 	}
 }
